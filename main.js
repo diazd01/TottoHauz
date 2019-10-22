@@ -268,9 +268,11 @@ if (contactForm) {
             phoneError.style.display = "none";
         }
         if (document.querySelector('.data-netlify') === null) {
+            console.log('no');
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
         }  else {
+            console.log('yes');
             document.querySelector('.captcha-error').style.display = "none";
         }
         
