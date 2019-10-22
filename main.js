@@ -305,7 +305,7 @@ if (contactForm) {
             console.log('no');
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
-        } else {
+        } if (document.querySelector('.data-netlify-recaptcha') !== null) {
             console.log('yes');
             document.querySelector('.captcha-error').style.display = "none";
         }
