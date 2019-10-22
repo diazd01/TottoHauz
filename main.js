@@ -301,9 +301,7 @@ if (contactForm) {
             contactPhone.style.border = "2px solid #32CD32";
             phoneError.style.display = "none";
         }
-        document.querySelector('.data-netlify-recaptcha').addEventListener('change', (e) => {
-            console.log(e.target.checked);
-        });
+
         if (document.querySelector('.data-netlify-recaptcha') === null) {
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
