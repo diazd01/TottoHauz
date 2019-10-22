@@ -130,17 +130,17 @@ a.selected {
 }
 
 .navModal {
-     position: fixed;
-     z-index: -1;
-     left: 0;
-     top: 0;
-     height: 100%;
-     width: 100%;
-     /* overflow: auto; */
-     background-color: rgba(0, 0, 0, 0.842);
-     display: none;
-     animation-name: openModal;
-     animation-duration: 0.5s;
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* overflow: auto; */
+    background-color: rgba(0, 0, 0, 0.842);
+    display: none;
+    animation-name: openModal;
+    animation-duration: 0.5s;
 }
 
 
@@ -153,6 +153,7 @@ a.selected {
         flex-wrap: wrap;
         margin-left: auto;
     }
+
     .links a {
         letter-spacing: 2px;
         font-size: 0.9rem;
@@ -210,7 +211,7 @@ a.selected {
         width: 100%;
         transform: translateY(-100%);
         transition: transform 0.3s ease-in;
-        
+
     }
 
     .links a {
@@ -431,6 +432,10 @@ down:focus {
 
 }
 
+.feature p {
+    text-transform: none;
+}
+
 .features {
     display: flex;
     justify-content: center;
@@ -477,6 +482,13 @@ down:focus {
         font-size: 1.8rem;
         max-width: 90%;
     }
+
+    .features p {
+        color: #757575;
+        margin-top: 0.8em;
+        font-size: 0.8rem;
+        line-height: 1.7;
+    }
 }
 
 hr {
@@ -514,7 +526,7 @@ hr {
 .services-intro h2 {
     text-align: center;
     font-size: 3rem;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-weight: 500;
     align-self: center;
     color: #2b2b2b;
@@ -525,8 +537,20 @@ hr {
 .services-intro p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1.7;
+    line-height: 1.8;
     text-align: center;
+    padding-bottom: 5em;
+}
+
+.services-intro h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    align-self: justify;
+    color: #2b2b2b;
+    /* margin: 2% 0 5% 0; */
+    text-transform: none;
 }
 
 
@@ -625,6 +649,11 @@ hr {
         font-size: 0.8rem;
         font-weight: 200;
         line-height: 1.5;
+        text-align: justify;
+    }
+
+    .services-intro h3 {
+        font-size: 0.9rem;
     }
 
     .services-intro {
@@ -1039,13 +1068,14 @@ closeBtn:focus {
 }
 
 .galleryBtn-ani {
-    animation-name: fadeIn; 
+    animation-name: fadeIn;
     animation-duration: 0.8s;
 }
 
 .rightBtn:hover,
 .rightBtn:focus,
-.leftBtn:hover, .leftBtn:focus  {
+.leftBtn:hover,
+.leftBtn:focus {
     color: rgb(44, 190, 93);
     text-decoration: none;
     cursor: pointer;
@@ -1591,10 +1621,36 @@ input {
 .about-message p {
     max-width: 50em;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #757575;
     font-weight: 300;
     font-size: 1rem;
+}
+
+.why-us-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.why-us-wrap p {
+    padding-top: 5em;
+    max-width: 60em;
+    text-align: left;
+    line-height: 1.8;
+    color: #757575;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:1500px) {
+    .why-us-wrap p {
+        padding-top: 3em;
+        width: 85%;
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width:900px) {
@@ -1622,6 +1678,7 @@ input {
     .about-message h3 {
         font-size: 1.4rem;
     }
+
 }
 
 /*SKILLS SECTION*/
@@ -1635,19 +1692,15 @@ input {
 .skills-title h2 {
     text-align: center;
     font-size: 2rem;
-    letter-spacing: px;
+    letter-spacing: 7px;
     font-weight: 600;
     color: #2b2b2b;
     padding: 3em 0 1.4em;
-    text-transform: capitalize;
-}
-
-.skills-title h2 span {
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 
 .skills-list {
-    max-width: 50em;
+    max-width: 70em;
     line-height: 1.7;
     color: #626262;
     font-weight: 300;
@@ -1664,7 +1717,13 @@ input {
 .skills-list p {
     padding-left: 1em;
     padding-bottom: 1.3em;
-    text-align: left;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 2% 0 5% 0;
+    text-transform: none;
 }
 
 
@@ -1745,6 +1804,8 @@ input {
     .skills-list p {
         padding-left: 0.5em;
         padding-bottom: 0.5em;
+        font-size: 0.9rem;
+        text-align: left;
     }
 
     .skills-bg {
