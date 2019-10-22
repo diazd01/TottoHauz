@@ -301,11 +301,11 @@ if (contactForm) {
             contactPhone.style.border = "2px solid #32CD32";
             phoneError.style.display = "none";
         }
-
+        let checked = false;
         document.querySelector('.captcha'), addEventListener('change', (e) => {
-            console.log(e.target.checked);
+            checked = e.target.checked;
         });
-        if (document.querySelector('.captcha').getResponse().length == 0) {
+        if (checked === false) {
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
         } else {
