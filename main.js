@@ -267,13 +267,15 @@ if (contactForm) {
             contactPhone.style.border = "2px solid #32CD32";
             phoneError.style.display = "none";
         }
-
+        if (document.querySelector('.data-netlify') === null) {
+            document.querySelector('.captcha-error').style.display = "block";
+            document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
+        }
         //FINAL VALIDATION: 
-
         if (nameError.style.display === "none" && emailError.style.display === "none" &&
             phoneError.style.display === "none" && document.querySelector('.data-netlify') !== null) {
             contactForm.submit();
-            
+
         }
 
     }
