@@ -302,7 +302,7 @@ if (contactForm) {
             phoneError.style.display = "none";
         }
 
-        if (document.querySelector('.captcha').getResponse().length == "") {
+        if (document.querySelector('.g-recaptcha').getResponse().length == "") {
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
         } else {
