@@ -1498,7 +1498,8 @@ closeBtn:focus {
 
 .email-error,
 .name-error,
-.phone-error {
+.phone-error,
+.captcha-error {
     display: none;
     color: red;
     padding: 0;
