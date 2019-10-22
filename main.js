@@ -271,11 +271,12 @@ if (contactForm) {
         //FINAL VALIDATION: 
 
         if (nameError.style.display === "none" && emailError.style.display === "none" &&
-            phoneError.style.display === "none") {
+            phoneError.style.display === "none" && document.querySelector('.data-netlify') !== null) {
             contactForm.submit();
             
         }
 
     }
+    console.log(document.querySelector('.data-netlify'));
 
 }
