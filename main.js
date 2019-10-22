@@ -302,16 +302,14 @@ if (contactForm) {
             phoneError.style.display = "none";
         }
         if (document.querySelector('.data-netlify-recaptcha') === null) {
-            console.log('no');
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
-        } if (document.querySelector('.data-netlify-recaptcha') !== null) {
-            console.log('yes');
+        } else {
             document.querySelector('.captcha-error').style.display = "none";
         }
         //FINAL VALIDATION: 
         if (nameError.style.display === "none" && emailError.style.display === "none" &&
-            phoneError.style.display === "none" && document.querySelector('.captcha-error').style.display === "none") {
+            phoneError.style.display === "none") {
             contactForm.submit();
 
         }
