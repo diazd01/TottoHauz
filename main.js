@@ -315,5 +315,5 @@ if (contactForm) {
         }
 
     }
-    console.log(document.querySelector('.data-netlify-recaptcha'));
+    console.log(document.querySelector('.data-netlify-recaptcha').getResponse());
 }
