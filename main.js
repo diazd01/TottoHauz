@@ -278,9 +278,8 @@ if (contactForm) {
         
         //FINAL VALIDATION: 
         if (nameError.style.display === "none" && emailError.style.display === "none" &&
-            phoneError.style.display === "none" && document.querySelector('.captcha-error').style.display === "none") {
+            phoneError.style.display === "none") {
             contactForm.submit();
-
         }
 
     }
