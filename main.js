@@ -25,7 +25,7 @@ const navAnimate = (e) => {
 
     //Burger Animate 
     burger.classList.toggle('burgerClicked');
-    
+
     //dark background when burger clicked
     if (navModal) {
         navModal.style.display = "block";
@@ -34,13 +34,21 @@ const navAnimate = (e) => {
     if (!burger.classList.contains('burgerClicked')) {
         navModal.style.display = "none";
     }
-    console.log(burger.classList);    
+    console.log(burger.classList);
     console.log(screen.width);
 }
 //event listener for burger button
 burger.addEventListener('click', navAnimate);
 
+// window.addEventListener('click', navClickedOutside);
 
+/***************************************
+// function navClickedOutside(e) {
+//     if (e.target === navModal) {
+//         navModal.style.display = "none";
+//     }
+// }
+*****************************************/
 
 //Function to change background of navbar when scrolled: 
 //declaring navBar variable: 
@@ -67,6 +75,37 @@ if (navBar) {
 /****  GALLERY MODAL ****/
 
 //declaring variables
+//Assigning each gallery div and making the child images into arrays: 
+// const bathroom = document.querySelector('.bathroom-gallery');
+// const bathroomPics = [...bathroom.children];
+// const bathroomBefore = document.querySelector('.bathroom-before');
+// const bathroomBeforePics = [...bathroomBefore.children];
+
+// const bedroom = document.querySelector('.generalRoom-gallery');
+// const bedroomPics = [...bedroom.children];
+
+// const generalRoom = document.querySelector('.generalRoom-gallery');
+// const generalRoomPics = [...generalRoom.children];
+
+// const bedroomBefore = document.querySelector('.bedroom-before');
+// const bedroomBeforePics = [...bedroomBefore.children];
+
+// const generalRoomBefore = document.querySelector('.generalRoom-before');
+// const generalRoomBeforePics = [...generalRoomBefore.children];
+
+// const basement = document.querySelector('.basement-gallery');
+// const basementPics = [...basement.children];
+
+// const basementBefore = document.querySelector('.basement-before');
+// const basementBeforePics = [...basementBefore.children];
+
+// //Combining these arrays into one by concat: 
+// const allImages = bathroomPics.concat(bathroomBeforePics, bedroomPics, generalRoomPics, bedroomBeforePics,
+//     generalRoomBeforePics, basementPics, basementBeforePics);
+
+// console.log(allImages);
+// console.log(allImages[0].getBoundingClientRect());
+
 const galleryImages = document.querySelectorAll('.small-image');
 
 if (galleryImages) {
@@ -122,7 +161,7 @@ if (galleryImages) {
             leftBtn.addEventListener('click', slideLeft);
         }
 
-        
+
         //going to previous image if left button clicked:
         function slideLeft(e) {
             leftBtn.style.visibility = "visible";
@@ -139,11 +178,6 @@ if (galleryImages) {
                 }
             }
 
-            // if (bigImage.style.animation) {
-            //     bigImage.style.animation = "";
-            // } else {
-            //     bigImage.style.animation = `fadeIn 0.5s ease`;
-            // }
         }
 
         if (rightBtn) {
@@ -216,7 +250,7 @@ if (contactForm) {
         //         message.innerHTML = `Field cannot be empty. Try again.`;
         //         message.style.color= "red";
         //     });
-        
+
         //NAME VALIDATION:
         if (contactName.value === "" || contactName.value == null) {
             nameError.style.display = "block";
@@ -271,18 +305,17 @@ if (contactForm) {
             console.log('no');
             document.querySelector('.captcha-error').style.display = "block";
             document.querySelector('.captcha-error').innerHTML = "You must select if you're not a robot."
-        }  else {
+        } else {
             console.log('yes');
             document.querySelector('.captcha-error').style.display = "none";
         }
-        
         //FINAL VALIDATION: 
         if (nameError.style.display === "none" && emailError.style.display === "none" &&
-            phoneError.style.display === "none" && document.querySelector('.captcha-error').style.display = "none") {
+            phoneError.style.display === "none" && document.querySelector('.captcha-error').style.display === "none") {
             contactForm.submit();
+
         }
 
     }
     console.log(document.querySelector('.data-netlify-recaptcha'));
-
 }
