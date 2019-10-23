@@ -577,6 +577,8 @@ hr {
     cursor: pointer;
 }
 
+
+
 .services-pics img:hover {
     border-radius: 10rem;
     opacity: 0.7;
@@ -645,11 +647,11 @@ hr {
         font-size: 2rem;
     }
 
-    .services-intro p {
+    .services-list p.services-p {
         font-size: 0.8rem;
         font-weight: 200;
         line-height: 1.5;
-        text-align: justify;
+        text-align: center;
     }
 
     .services-intro h3 {
