@@ -1786,6 +1786,15 @@ input {
     width: 120px;
 }
 
+/* Toronto Logo certification */
+.toronto-cert img {
+    width: 180px;
+}
+
+.toronto-cert-text {
+    padding-left: 1em;
+}
+
 
 @media screen and (max-width:900px) {
 
