@@ -40,17 +40,6 @@ const navAnimate = (e) => {
 //event listener for burger button
 burger.addEventListener('click', navAnimate);
 
-// window.addEventListener('click', navClickedOutside);
-
-/***************************************
-// function navClickedOutside(e) {
-//     if (e.target === navModal) {
-//         navModal.style.display = "none";
-//     }
-// }
-*****************************************/
-
-//Function to change background of navbar when scrolled: 
 //declaring navBar variable: 
 const navBar = document.querySelector('nav');
 
@@ -69,42 +58,6 @@ if (navBar) {
     //Event listening to scroll
     document.addEventListener('scroll', navScrolled);
 }
-
-/*****GALLERY PAGE ********/
-
-/****  GALLERY MODAL ****/
-
-//declaring variables
-//Assigning each gallery div and making the child images into arrays: 
-// const bathroom = document.querySelector('.bathroom-gallery');
-// const bathroomPics = [...bathroom.children];
-// const bathroomBefore = document.querySelector('.bathroom-before');
-// const bathroomBeforePics = [...bathroomBefore.children];
-
-// const bedroom = document.querySelector('.generalRoom-gallery');
-// const bedroomPics = [...bedroom.children];
-
-// const generalRoom = document.querySelector('.generalRoom-gallery');
-// const generalRoomPics = [...generalRoom.children];
-
-// const bedroomBefore = document.querySelector('.bedroom-before');
-// const bedroomBeforePics = [...bedroomBefore.children];
-
-// const generalRoomBefore = document.querySelector('.generalRoom-before');
-// const generalRoomBeforePics = [...generalRoomBefore.children];
-
-// const basement = document.querySelector('.basement-gallery');
-// const basementPics = [...basement.children];
-
-// const basementBefore = document.querySelector('.basement-before');
-// const basementBeforePics = [...basementBefore.children];
-
-// //Combining these arrays into one by concat: 
-// const allImages = bathroomPics.concat(bathroomBeforePics, bedroomPics, generalRoomPics, bedroomBeforePics,
-//     generalRoomBeforePics, basementPics, basementBeforePics);
-
-// console.log(allImages);
-// console.log(allImages[0].getBoundingClientRect());
 
 const galleryImages = document.querySelectorAll('.small-image');
 
@@ -241,16 +194,6 @@ if (contactForm) {
     }
     //validation function
     function validate() {
-
-        // if (contactName.value === "" || contactEmail.value === "" ||
-        //     contactPhone.value === "") {
-
-        //     errorMessage.forEach((message) => {
-        //         message.style.display = "block";
-        //         message.innerHTML = `Field cannot be empty. Try again.`;
-        //         message.style.color= "red";
-        //     });
-
         //NAME VALIDATION:
         if (contactName.value === "" || contactName.value == null) {
             nameError.style.display = "block";
