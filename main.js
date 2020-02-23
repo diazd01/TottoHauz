@@ -1,16 +1,12 @@
 /*****ALL PAGES ********/
-
 //Declaring variables and creating query selectors: 
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.links');
 const navList = document.querySelectorAll('.links li');
 const headerSec = document.querySelector('.header-section');
 const navModal = document.querySelector('.navModal');
-
-
 //Function to animate navigation
 const navAnimate = (e) => {
-
     //Toggle the nav button
     navLinks.classList.toggle('nav-active');
 
@@ -69,7 +65,6 @@ if (galleryImages) {
 
     //MODAL
     let modal = document.querySelector('.modal');
-
     if (modal) {
         let bigImage = document.querySelector('.modal-content > img');
 
@@ -77,7 +72,6 @@ if (galleryImages) {
         galleryImages.forEach((image) => {
             image.addEventListener('click', openModal);
         });
-
         //Close button: 
         let closeBtn = document.querySelector('.closeBtn');
 
@@ -108,13 +102,10 @@ if (galleryImages) {
             }
 
         }
-
         //BUTTONS:
         if (leftBtn) {
             leftBtn.addEventListener('click', slideLeft);
         }
-
-
         //going to previous image if left button clicked:
         function slideLeft(e) {
             leftBtn.style.visibility = "visible";
@@ -136,7 +127,6 @@ if (galleryImages) {
         if (rightBtn) {
             rightBtn.addEventListener('click', slideRight);
         }
-
         const galleryMax = galleryImages.length;
 
         //going to next image if right button clicked:
@@ -156,12 +146,10 @@ if (galleryImages) {
             }
         }
     }
-
     //Close modal: 
     function closeModal() {
         modal.style.display = "none";
     }
-
     //Closes when clicked outside function:
     function clickedOutside(e) {
         if (e.target === modal || e.target === document.querySelector('.modal-content')) {
@@ -169,9 +157,6 @@ if (galleryImages) {
         }
     }
 }
-
-
-
 /********CONTACT PAGE - FORM VALIDATION ********/
 const contactForm = document.querySelector('.contactForm');
 if (contactForm) {
@@ -213,7 +198,6 @@ if (contactForm) {
             nameError.style.display = "none";
             contactName.style.border = "2px solid #32CD32";
         }
-
         //EMAIL VALIDATION:
         if (contactEmail.value === "" || contactEmail.value == null) {
             emailError.style.display = "block";
@@ -227,9 +211,7 @@ if (contactForm) {
         } else {
             contactEmail.style.border = "2px solid #32CD32";
             emailError.style.display = "none";
-
         }
-
         //PHONE VALIDATION
         if (contactPhone.value === "" || contactPhone.value == null) {
             phoneError.style.display = "block";
@@ -249,7 +231,9 @@ if (contactForm) {
             phoneError.style.display === "none") {
             contactForm.submit();
         }
-
     }
-
 }
+//Current Year: 
+let date = new Date();
+let year = date.getFullYear();
+document.querySelector('.year').textContent = `© ${year} Totto Hauz`;
