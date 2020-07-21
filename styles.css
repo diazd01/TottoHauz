@@ -1668,14 +1668,14 @@ input {
     font-size: 1rem;
 }
 
-#testimonies {
+.testimonies-container {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
 }
 
-#testimonies h1 {
+.testimonies-container h1 {
     letter-spacing: 5px;
     padding-top: 1em;
     text-transform: uppercase;
@@ -1684,7 +1684,7 @@ input {
     font-size: 2rem;
 }
 
-#testimonies p {
+.testimonies-container p {
      padding-top: 2em;
      max-width: 60%;
      line-height: 1.8;
