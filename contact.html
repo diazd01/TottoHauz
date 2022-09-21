@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact | TottoHauz</title>
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- ICON -->
+    <link rel="shortcut icon" href="images/alt-logo.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/59909e62ff.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <section class="contact-header-section">
+
+        <!-- Navbar -->
+        <nav class="side-nav contactNav">
+            <a class="logo-link" href="index.html">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                    <h1>TOTTO HAUZ</h1>
+                </div>
+            </a>
+            <ul class="links">
+                <li> <a href="index.html">Home</a></li>
+                <li>
+                    <ul class="about-dropdown"><a href="about.html">About</a>
+                        <li><a href="about.html#testimonies" class="testimonies-list">TESTIMONIES</a></li>
+                    </ul>
+                </li>
+                <li> <a href="index.html#services">Services</a></li>
+                <li> <a href="gallery.html">Gallery</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <div class="navModal">
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <div class="contact-header-container">
+            <div class="side-header-logo contact-header-logo">
+                <h1>contact us <i class="fas fa-tty"></i></h1>
+                <h2>we'll be happy to chat!</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- MIDDLE SECTION - CONTACT FORM -->
+
+    <section class="contactForm-section">
+
+        <div class="contactForm-container">
+
+            <div class="contactForm-left">
+                <div class="contactForm-header">
+                    <h2>let us know about your next project.</h2>
+                    <h3><span>fill</span> out the form to get in touch: </h3>
+                </div>
+                <!-- action="https://formspree.io/diazd003@gmail.com" -->
+                <!-- action="POST" data-netlify="true" -->
+                <!-- <form action="/index.html" class="contactForm"> -->
+                <form method="POST" data-netlify="true" class="contactForm">
+                    <!-- FORM -->
+                    <p>
+                        <label class="requiredLabel">Name</label>
+                        <input placeholder="Your Name" type="text" name="name" class="contactName" required>
+                    </p>
+                    <label class="error-message name-error"></label>
+
+                    <p>
+                        <label class="requiredLabel">Email Address</label>
+                        <input placeholder="username@example.com" type="email" name="email" class="contactEmail">
+                    </p>
+                    <label class="error-message email-error"></label>
+
+                    <p>
+                        <label class="requiredLabel">Phone Number</label>
+                        <input placeholder="Format: 647 222 8888 or 6472228888" type="tel" name="phone"
+                            class="contactPhone">
+                    </p>
+                    <label class="error-message phone-error"></label>
+
+                    <p>
+                        <label>Message</label>
+                        <textarea placeholder="Describe your renovation project and/or make inquiries here."
+                            name="message" rows="8" class="contactMessage"></textarea>
+                    </p>
+                    <label class="text-error-message"></label>
+
+                    <!-- NETLIFY SPAM FILTERING: -->
+                    <div class="spam-filter-field">
+                        <div class="captcha" data-netlify-recaptcha="true">
+                        </div>
+                        <label class="captcha-error">You must select to send message and verify you're human.</label>
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <p>
+                        <button type="button" class="submit-btn">send message</button>
+                    </p>
+                </form>
+            </div>
+
+            <div class="contactForm-right">
+
+                <div class="contactForm-header">
+                    <h2>call totto:</h2>
+                </div>
+
+                <div class="contactForm-phone-wrapper">
+                    <a href="tel:2893145873">
+                        <i class="contactForm-icon fas fa-phone-alt"></i>
+                    </a>
+                    <a class="contactForm-phone" href="tel:2893145873">(289) 314 5873</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <section class="gallery-footer-section">
+
+        <footer class="footer-container contact-footer-container">
+
+            <div class="footer-start">
+
+                <div class="footer-left">
+                    <div class="footer-logo-wrap">
+                        <img src="images/full-logo.png" alt="logo" class="footer-logo">
+                    </div>
+                    <div class="footer-about">
+                        <p class="footer-about-p">
+                            <strong>Totto Hauz</strong> specializes and is certified in
+                            home and office renovations, restorations, repairs and designs.
+                            Based in the Greater Toronto Area.
+                        </p>
+                        <p class="license-numbers">
+                            <strong>license number:</strong> T85-4854788
+                        </p>
+                        <p class="license-numbers">
+                            <strong>trade number:</strong> B26555
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+
+                    <div class="connect-title">
+                        <h1>get in touch</h1>
+                    </div>
+                    <div class="personal-links">
+                        <div class="link1">
+                            <a href="mailto:tottohauz@gmail.com">
+                                <!-- <i class="icon far fa-envelope"></i> -->
+                                <i class="icon fas fa-envelope-square"></i>
+                            </a>
+                            <a class="person-link mail" href="mailto:tottohauz@gmail.com">tottohauz@gmail.com</a>
+                        </div>
+                        <div class="link2">
+                            <a href="tel:2893145873">
+                                <i class="icon fas fa-phone-square-alt"></i>
+                            </a>
+                            <a class="person-link" href="tel:2893145873">(289) 314 5873</a>
+                        </div>
+                        <div class="link3">
+                            <a href="https://goo.gl/maps/SV4uFq11vsEbWEje9" target="_blank">
+                                <i class="icon fas fa-map-marker-alt"></i>
+                            </a>
+                            <a class="person-link" href="https://goo.gl/maps/SV4uFq11vsEbWEje9" target="_blank">Greater
+                                Toronto Area,
+                                ON</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/lenarddiaz/" target="_blank">
+                                <i class="social-icon fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="twitter">
+                            <a href="https://twitter.com/tottolenard" target="_blank">
+                                <i class="social-icon fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/tottolenard" target="_blank">
+                                <i class="social-icon fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-end">
+                <p class="year"></p>
+            </div>
+        </footer>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
